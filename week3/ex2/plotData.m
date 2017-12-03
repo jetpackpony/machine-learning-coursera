@@ -23,6 +23,12 @@ figure; hold on;
 % =========================================================================
 
 
+pos = X(find(y == 1), :);
+neg = X(find(y == 0), :);
+
+plot(pos(:,1), pos(:,2), "k+", "lineWidth", 2, "markerSize", 7);
+plot(neg(:,1), neg(:,2), "ko", "markerFaceColor", "y", "markerSize", 7);
+
 
 hold off;
 
